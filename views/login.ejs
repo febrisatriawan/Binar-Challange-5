@@ -48,7 +48,7 @@
     <p class="text-center small">Already have an account? <a href="/sign_up">Sign Up Here</a></p>
     <p class="text-center small"><a href="/">Back to HOME</a></p></br>
 
-<!-- show error message if user has entered wrong login information -->
+<!-- show error message if user has entered invalid login -->
     <div class="login-status text-center">
         <% if(status == 'fail') { %>
         <%- include('partial/message') %>

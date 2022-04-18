@@ -17,5 +17,4 @@ router.get("/games", (req, res) => {
     });
 });
 
-
 module.exports = router;

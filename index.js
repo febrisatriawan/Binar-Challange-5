@@ -131,7 +131,7 @@ app.post('/sign_up', (req, res) => {
         password
     } = req.body
 
-    //get id 
+//get id 
     const id = users[users.length - 1].id + 1
     const sign_up = {
         id,
@@ -143,9 +143,9 @@ app.post('/sign_up', (req, res) => {
     users.push(sign_up)
     console.log(users)
 
-    // parsing into json file 
+// parsing into json file 
     users = JSON.stringify(users); 
-    // saving the json file
+// saving the json file
     fs.writeFileSync("./data/user.json", users, "utf8"); 
     res.render('login')
 });
